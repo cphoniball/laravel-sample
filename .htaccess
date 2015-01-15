@@ -1,0 +1,3 @@
+# remove public from URL, via http://stackoverflow.com/questions/21465260/change-document-root-using-htaccess-on-wamp
+RewriteEngine on
+RewriteRule ^((?!public/).*)$ public/$1 [L,NC]
